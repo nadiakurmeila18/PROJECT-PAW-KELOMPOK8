@@ -1,0 +1,172 @@
+/* =========================================
+   DESAIN GLOBAL & KONTAINER (Bisa untuk login & tabel)
+   ========================================= */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Container dibuat lebar agar tabel muat */
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333333;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 20px 0;
+}
+
+/* =========================================
+   NAVIGASI MENU (Tampil, Tambah, Logout)
+   ========================================= */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #fb00ff; /* Warna ungu */
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #b30080; /* Ungu gelap saat di-hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+th {
+    background-color: #fb00ff; /* Header ungu */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Efek sorot saat kursor di atas baris */
+}
+
+/* =========================================
+   TOMBOL EDIT & HAPUS (Di dalam tabel)
+   ========================================= */
+td a {
+    text-decoration: none;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Tombol Edit (Warna Oranye) */
+td a[href*="student_edit"] {
+    background-color: #f0ad4e;
+}
+td a[href*="student_edit"]:hover {
+    background-color: #ec971f;
+}
+
+/* Tombol Hapus (Warna Merah) */
+td a[href*="student_delete"] {
+    background-color: #d9534f;
+}
+td a[href*="student_delete"]:hover {
+    background-color: #c9302c;
+}
+
+/* =========================================
+   STYLE UNTUK FORM (Login, Tambah, Edit)
+   ========================================= */
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+legend {
+    font-weight: bold;
+    color: #fb00ff;
+    padding: 0 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+input[type="submit"] {
+    background-color: #fb00ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #b30080;
+}
+
+/* Style Pesan Error / Sukses */
+.error, .pesan {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.error {
+    background-color: #FFECEC;
+    border: 1px solid #d9534f;
+    color: #d9534f;
+}
+.pesan {
+    background-color: #E7F6EC;
+    border: 1px solid #28a745;
+    color: #28a745;
+}

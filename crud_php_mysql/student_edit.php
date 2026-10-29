@@ -142,10 +142,10 @@ $arr_month = [
                 <!-- NIM dibuat readonly agar tidak bisa diubah karena sebagai Primary Key -->
                 <input type="text" name="nim" id="nim" value="<?php echo $nim; ?>" readonly> (NIM tidak dapat diubah)
             </p>
-            <p>
-                <label for="name">Nama : </label>
-                <input type="text" name="name" id="name" value="<?php echo $name; ?>">
-            </p>
+                <p>
+                <label for="name">Nama Lengkap : </label>
+                <input type="text" name="name" id="name" value="<?php echo $name; ?>" required>
+                </p>
             <p>
                 <label for="birth_city">Tempat Lahir : </label>
                 <input type="text" name="birth_city" id="birth_city" value="<?php echo $birth_city; ?>">
@@ -189,8 +189,8 @@ $arr_month = [
                 <input type="text" name="department" id="department" value="<?php echo $department; ?>">
             </p>
             <p>
-                <label for="gpa">IPK : </label>
-                <input type="text" name="gpa" id="gpa" value="<?php echo $gpa; ?>">
+                <label for="gpa">IPK (Contoh: 3.50) : </label>
+                <input type="text" name="gpa" id="gpa" value="<?php echo $gpa; ?>" required>
             </p>
         </fieldset>
         <br>

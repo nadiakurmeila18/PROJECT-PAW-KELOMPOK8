@@ -149,18 +149,17 @@
     <form id="form_mahasiswa" action="student_add.php" method="post">
       <fieldset>
         <legend>Mahasiswa Baru</legend>
-        <p>
+               <p>
           <label for="nim">NIM : </label>
-          <input type="text" name="nim" id="nim" value="<?php echo $nim ?>" placeholder="Contoh: 12345678"> (8 digit angka)
+          <input type="text" name="nim" id="nim" value="<?php echo $nim ?>" placeholder="Masukkan 8 digit NIM" required> (8 digit angka)
         </p>
         <p>
-          <label for="name">Nama : </label>
-          <input type="text" name="name" id="name" value="<?php echo $name ?>">
+          <label for="name">Nama Lengkap : </label>
+          <input type="text" name="name" id="name" value="<?php echo $name ?>" placeholder="Masukkan nama lengkap" required>
         </p>
         <p>
           <label for="birth_city">Tempat Lahir : </label>
-          <input type="text" name="birth_city" id="birth_city"
-          value="<?php echo $birth_city ?>">
+          <input type="text" name="birth_city" id="birth_city" value="<?php echo $birth_city ?>">
         </p>
         <p>
           <label for="birth_date" >Tanggal Lahir : </label>

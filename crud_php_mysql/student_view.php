@@ -65,11 +65,11 @@
         echo "<td>$formatted_date</td>";
         echo "<td>$data[faculty]</td>";
         echo "<td>$data[department]</td>";
-        echo "<td>$data[gpa]</td>";
-        echo "<td>
-            <a href='student_edit.php?nim=$data[nim]'>Edit</a> | 
-            <a href='student_delete.php?nim=$data[nim]' onclick='return confirm(\"Yakin ingin menghapus data ini?\")'>Hapus</a>
-          </td>"; 
+        echo "<td><b>$data[gpa]</b></td>";
+        echo "<td style='text-align: center;'>
+          <a href='student_edit.php?nim=$data[nim]'>Edit</a> | 
+          <a href='student_delete.php?nim=$data[nim]' onclick='return confirm(\"Yakin ingin menghapus data ini?\")'>Hapus</a>
+        </td>"; 
         echo "</tr>";
       }
       
